@@ -1,0 +1,139 @@
+/*****************
+Pos Page Content Wrapper Section Css
+*****************/
+.content-wrapperr {
+    min-height: 100% !important;
+    background-color: #f3f2f7;
+    overflow: hidden;
+    border-radius: 0;
+    margin-left: 20.79rem;
+    z-index: 820;
+    margin-top: 85px;
+}
+  .content-wrapperr .contnt .box{
+    height: 100% !important;
+    border-radius: 0px;
+  }
+  .content-wrapperr .contnt .box-body{
+    border-radius: 0px;
+    height: 830px !important;
+  }
+  .content-wrapperr .contnt .icon{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #0077b5;
+  }
+  .content-wrapperr .contnt .box-footer{
+    border-radius: 0px;
+    border-top: 0px;
+  }
+  .content-wrapperr .contnt .btn{
+    border-radius: 0px;
+  }
+   /***&&&&&&&  Middle Column Css Start  &&&&&&&*****/
+  .content-wrapperr .contnt .top-btn{
+    padding: -10px 45px;
+    width: 100%;
+  }
+  .content-wrapperr .contnt .btn_pos_user{
+    width: 100%;
+    padding: 10px;
+  }
+  .content-wrapperr .contnt .btn_pos_user:hover{
+    color: #000 !important;
+  }
+  .content-wrapperr .contnt .custom_table_price{
+    margin-top: 15px;
+  }
+  .content-wrapperr .contnt .scrollbar{
+    overflow-y: scroll;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    height: 560px;
+  }
+  .content-wrapperr .contnt .footer-content{
+    margin-top: 80px;
+  }
+  .content-wrapperr .contnt .footer-content span i{
+    font-size: 13px;
+    margin: 0px 5px;
+    cursor: pointer;
+  } 
+  .content-wrapperr .contnt .dine-btn{
+    color: #000;
+    border-color: #1890ff;
+  }
+  .content-wrapperr .contnt .dine-btn:hover{
+    background-color: #1890ff;
+    color: #fff;
+  }
+  .content-wrapperr .contnt .take-btn{
+    border-color: #ffd666;
+    color: #000;
+  }
+  .content-wrapperr .contnt .take-btn:hover{
+    background-color: #ffd666;
+    color: #fff;
+  }
+  .content-wrapperr .contnt .delivery-btn{
+    border-color: #ffbb96;
+    color: #000;
+  }
+  .content-wrapperr .contnt .delivery-btn:hover{
+    background-color: #ffbb96;
+    color: #fff;
+  }
+  .content-wrapperr .contnt .table-btn{
+    border-color: #87e8de;
+    color: #000;
+  }
+  .content-wrapperr .contnt .table-btn:hover{
+    background-color: #87e8de;
+    color: #fff;
+  }
+  .content-wrapperr .contnt p{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .content-wrapperr .contnt table td i{
+    margin-left: 20px;
+  }
+  .content-wrapperr .contnt .counting{
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  .content-wrapperr .contnt .incbtn{
+    background-color: #52c41a;
+    color: #fff;
+    border: 0px;
+    padding: 0px 7px;
+  }
+  .content-wrapperr .contnt .decbtn{
+    background-color: #f5222d;
+    color: #fff;
+    border: 0px;
+    padding: 0px 8px;
+  }
+  .content-wrapperr .contnt .theme-primary .bg-info{
+    background-color: #000 !important;
+  }
+  .content-wrapperr .contnt .cancel-btn{
+    background-color: #ff4d4f;
+    color: #fff;
+  }
+  .content-wrapperr .contnt .draft-btn{
+    background-color: #fa8c16;
+    color: #fff;
+  }
+  .content-wrapperr .contnt .invoice-btn{
+    background-color: #597ef7;
+    color: #fff;
+  }
+  .content-wrapperr .contnt .place-btn{
+    background-color: #52c41a;
+    color: #fff;
+  }
+ /***&&&&&&&  Middle Column Css End   &&&&&&&*****/
+ 

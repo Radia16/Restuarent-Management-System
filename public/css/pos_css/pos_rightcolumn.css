@@ -1,0 +1,97 @@
+/*****************
+Pos Page Content Wrapper Section Css
+*****************/
+/****&&&&&&&  Right Column Css Start &&&&&&&****/
+  .content-wrapperr .contnt input{
+    border-radius: 0;
+    border: 1px solid #b5b5c3;
+  }
+  .content-wrapperr .contnt .search-bx{
+    margin-top: -5px;
+    padding: 8px 0;
+  }
+  .content-wrapperr .contnt #search{
+    padding: 4px;
+    border: 1px solid #0050e3;
+  }
+  .content-wrapperr .contnt .btnn{
+    padding: 4px;
+    border: 1px solid #0050e3;
+    margin-left: -4px;
+    background: transparent;
+  }
+  .content-wrapperr .contnt .tbl-header{
+    right: 20px;
+  }
+  .content-wrapperr .contnt .srch-btn{
+    background-color: #1890ff;
+    color: #fff;
+  }
+  .content-wrapperr .contnt .reset-btn{
+    margin-top: 2px;
+    padding: 11px 20px;
+    color: #000;
+  }
+  .content-wrapperr .contnt .reset-btn:hover{
+    background-color: #1890ff;
+    color: #fff;
+  }
+  .content-wrapperr .contnt .filter-btn{
+    color: #1890ff;
+    margin-top: 10px;
+  }
+  .content-wrapperr .contnt a{
+    margin-top: 20px;
+  }
+  .content-wrapperr .contnt .gallery-box-content {
+    position: absolute; 
+    height: 200px;
+  }
+  .content-wrapperr .contnt .gallery-box-content2 {
+    position: absolute; 
+    height: 200px;
+    margin-top: 95px;
+  }
+  .content-wrapperr .contnt .gallery-content-button{
+    margin-top: -19px;
+  }
+  .content-wrapperr .contnt .item-btn{
+    width: 100%;
+    background: #e6f7ff;
+    color: #000;
+    border: 0px;
+  }
+  .content-wrapperr .contnt .item-btn:hover{
+    background-color: #1890ff;
+    color: #fff;
+  }
+  .content-wrapperr  .isotope-gallary .gallery-div{
+    display:grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    margin-top:1rem !important;
+  }
+  .content-wrapperr  .isotope-gallary .gallery-img{
+    width: 100% !important;
+  }
+  .content-wrapperr  .gallery-div .item_img {
+    width:100% !important;
+    height: 205px;
+    object-fit: contain;
+    box-shadow:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  .content-wrapperr .gallary-div .item_img .gallary-img{
+    width:80% !important;
+  }
+  .content-wrapperr .gallery-div .item_img .item-name{
+    text-align: center;
+    margin-top: -15px;
+  }
+  .content-wrapperr .isotope-gallary {
+  overflow-y: scroll;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  height: 750px;
+}
+/****&&&&&&&  Right Column Css End &&&&&&&****/

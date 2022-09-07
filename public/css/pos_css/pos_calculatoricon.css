@@ -1,0 +1,86 @@
+/* calculator css start */
+.calc-table {
+    margin: auto;
+    background-color: #222;
+    width: 241px;
+    height: 180px;
+    text-align: center;
+  }
+  
+  .input-table {
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: #fff;
+    width: 40px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  .input-table:hover {
+    border: 0 solid #000;
+    color: #495069;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  .input-table:active {
+    top: 4px;
+    border: 0 solid #000;
+    color: #495069;
+    background-color: #fff;
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  #display {
+    width: 220px;
+    height: 30px;
+    font-size: 26px;
+    text-align: right;
+    background-color: #fff;
+    float: left;
+  }
+  
+  #display:hover {
+    border-radius: 0;
+  }
+  
+  #display:active {
+    border-radius: 0;
+  }
+  
+  .operator {
+    background-color: #e6f7ff;
+    position: relative;
+  }
+  
+  .operator:hover {
+    background-color: #e6f7ff;
+  } 
+  #clear {
+    background-color: #ff4d4f;
+    color: #fff;
+  }
+  
+  #clear:hover {
+    background-color: #ff4d4f;
+    color: #fff;
+  }
+  
+  #clear:active {
+    background-color: #ff4d4f;
+    color: #fff;
+  }
+  
+/* calculator css end */

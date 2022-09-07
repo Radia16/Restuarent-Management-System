@@ -1,0 +1,75 @@
+/*****************
+Pos Page Modal Design Css
+*****************/
+/****modal css start*****/
+.modal-dialog button{
+    border-radius: 0px !important;
+    margin-right: 10px;
+  }
+  .modal-dialog .form-control{
+    border-radius: 0px;
+  }
+   .modal-design{
+      max-width: 960px !important;
+   }
+   .modal-design p{
+     text-align: center;
+   }
+   .modal-design .box{
+       box-shadow: none;
+   }
+   .modal-design button{
+      border-radius: 0px;
+   }
+   .modal-design thead{
+       background-color: #dae1e9;
+   }
+   .modal-design table th:first-child{
+       width: 36%;
+   }
+   .modal-design .modal-body .payable h1{
+      margin: 10px 0;
+      text-align: center;
+      background-color: #ecf0f1;
+      color: #5d5d5d;
+      font-weight: 500;
+      font-size: 22px;
+  }
+  .modal-design .modal-footer .modal-f-btn{
+      border-radius: 0px;
+      width: 100%;
+  }
+  .modal-design .read-btn{
+    background-color: red;
+    color: #fff;
+  }
+  .modal-dialog #searchbox{
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 92%;
+    border: 1px solid #a9bdcc;
+  }
+  .modal-dialog .btnn{
+    padding: 5px;
+    border: 1px solid #a9bdcc;
+    margin-left: -4px;
+    background: transparent;
+  }
+  .modal-dialog .search-bx{
+    width: 100% !important;
+  }
+  .modal{
+    z-index: 100000 !important;
+  }
+  .required:after { 
+    content:" *"; 
+    color: red;
+  }
+  
+  .select2-container--open {
+    z-index: 9999999 !important;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow{
+    right: 8px;
+  }
+/****modal css end*****/

@@ -1,0 +1,90 @@
+/*************************
+Pos Page Sidebar Css Start
+**************************/
+.main-sidebar{
+    top: 0px;
+    float: left;
+    box-shadow: #000;
+}
+/**Running Order css start**/
+.main-sidebar .header-box{
+    width: 19.29rem;
+    float: left;
+    border-top-right-radius: 0px;
+    background-color: #ffffff;
+}  
+.main-sidebar h3{
+    font-size: 18px;
+    color: #1890ff;
+}
+.main-sidebar .arrow-icon{
+    margin-left: 20px;
+    margin-right: 16px;
+    color: #faad14;
+}
+/**Running Order css end**/
+/**Search bar css start**/
+.main-sidebar .search-bx{
+    margin-left: 70px;
+}
+.main-sidebar #search{
+    padding: 4px;
+    border: 1px solid #1890ff;
+}
+.main-sidebar .btnn{
+    padding: 4px;
+    border: 1px solid #1890ff;
+    margin-left: -4px;
+    background: transparent;
+    color: #1890ff;
+}
+/**Search bar css end**/
+/**Order list css start**/
+.main-sidebar .order-list{
+    width: 75%;
+    background-color: #ffffff;
+    margin: 4px auto;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #a9bdcc;
+    float: right;
+    height: 8%;
+}
+.main-sidebar .inside-order-list{
+    position: relative;
+    width: 100%;
+}
+.main-sidebar .single-order-list-container{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+.main-sidebar .order-no{
+    left: 25px;
+    top: -20px;
+    position: relative;
+}
+.main-sidebar .order-type{
+    position: relative;
+    top: -30px;
+    left: 25px;
+}
+.main-sidebar #scroller {
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    height: 360px;
+    overflow-y: scroll;
+}
+.main-sidebar .accordion{
+    padding-left: 59px;
+}
+.main-sidebar .accordion-body{
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin: 10px;
+  }
+/*************************
+Pos Page Sidebar Css End
+**************************/

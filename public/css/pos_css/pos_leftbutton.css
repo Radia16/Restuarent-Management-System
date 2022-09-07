@@ -1,0 +1,54 @@
+/**Leftside footer button start**/
+.main-sidebar{
+  padding-top: 0px;
+}
+.main-sidebar .left-side-button{
+  padding: 0 5px;
+  position: relative;
+  left: 68px;
+  top: 264px;
+}
+.main-sidebar .custom-btn{
+  width: 190px !important; 
+}
+.main-sidebar .left-side-button .icon{
+  margin-right: 20px;
+}
+.main-sidebar .order-btn{
+  border-radius: 0px;
+  background-color: #52c41a;
+  color: #fff;
+}
+.main-sidebar .kot-btn{
+  padding: 4px 17px;
+  border-radius: 0px;
+  background-color: #faad14;
+  color: #fff;
+}
+.main-sidebar .bot-btn{
+  padding: 4px 17px;
+  border-radius: 0px;
+  background-color: #faad14;
+  color: #fff;
+}
+.main-sidebar .bill-btn{
+  border-radius: 0px;
+  background-color: #1890ff;
+  color: #fff;
+}
+.main-sidebar .create-btn{
+  border-radius: 0px;
+  background-color: #722ed1;
+  color: #fff;
+}
+.main-sidebar .close-btn{
+  border-radius: 0px;
+  background-color: #ff4d4f;
+  color: #fff;
+}
+.main-sidebar .status-btn{
+  border-radius: 0px;
+  background-color: #2f54eb;
+  color: #fff;
+}
+/**Leftside footer button end**/

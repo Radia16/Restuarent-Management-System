@@ -1,0 +1,86 @@
+@extends('admin.main_master')
+
+@section('content')
+<div class="container">
+    <div class="box_p" >
+        <div class="box-header with-border">
+          <h4 class="box-title">Add Users</h4>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-8">
+                <form action="{{ route('customer.store') }}" method="POST" >
+                    @csrf
+
+               
+
+
+                   
+                    <div class="form-group row">
+                      <label for="example-search-input" class="col-sm-2 col-form-label">Outlet Id </label>
+                      <div class="col-sm-10">
+                        <select type="text" name="outlet_id" id="outlet_id"  class="form-control"  placeholder="outlet id">
+                          @foreach($outletset as $outlet)
+                          <option value="{{ $outlet->id }}"> {{ $outlet->id }}</option>
+                          @endforeach 
+                        </select>
+                      </div>
+                    </div>
+
+                <div class="form-group row">
+                  <label for="example-search-input" class="col-sm-2 col-form-label">Users Name </label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="text" name="name"  id="name" placeholder="Enter Name" required="">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="example-email-input" class="col-sm-2 col-form-label">Date Of Birth</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="date" name="dob"  id="dob" placeholder="d/m/y" required="">
+                  </div>
+                </div>
+
+
+                <div class="form-group row">
+                  <label for="example-url-input" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="text" name="password"  id="password" placeholder="Enter Email" required="">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="example-url-input" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="text" name="email"  id="email" placeholder="Enter Email" required="">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="example-tel-input" class="col-sm-2 col-form-label">Contact no</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="text" name="phone"  id="phone" placeholder="Enter Contact no" required="">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="example-tel-input" class="col-sm-2 col-form-label">Address</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="text" name="address"  id="address" placeholder="Enter Address">
+                    </div>
+                  </div>
+
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-success pull-right">Submit</button>
+                </div>
+            </form>
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+    </div>
+</div>
+@endsection

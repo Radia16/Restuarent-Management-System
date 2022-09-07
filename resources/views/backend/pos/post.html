@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from riday-admin-template.multipurposethemes.com/bs5/main/sample_blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 08:04:38 GMT -->
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://riday-admin-template.multipurposethemes.com/bs5/images/favicon.ico">
+
+    <title>Riday - Restaurant Bootstrap Admin Template Webapp</title>
+
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="css/vendors_css.css">
+
+	<!-- Style-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skin_color.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="dist/sweetalert2.min.css">
+</head>
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed">
+<div class="wrapper">
+	<div id="loader"></div>
+<!------------ Left side column. contains header name and icon start------------------>
+  <header class="main-header">
+	<div class="d-flex align-items-center header-box justify-content-end px-3">
+		  <h3 class="text-primary">Running Orders</h3>
+		  <a href="#"><i class="arrow-icon glyphicon glyphicon-retweet text-danger"></i></a>
+	</div>
+<!------------ Left side column. contains header name and icon end------------------>
+<!----------- Middel side, contains header navbar Start ---------->
+    <nav class="navbar navbar-static-top">
+	  <div class="app-menu">
+		<ul>
+			<li>
+		     	<a href="#"><i class="glyphicon glyphicon-align-right "></i></a>
+			 	<a href="#"><i class="glyphicon glyphicon-fullscreen"></i></a>
+			  	<a href="#"><i class="glyphicon glyphicon-folder-open"></i> </a>
+			  	<a href="#"><i class="glyphicon glyphicon-print"></i> </a>
+			  	<a href="#"><i class="glyphicon glyphicon-time"></i> </a>
+			  	<a href="#"><i class="glyphicon glyphicon-repeat"></i> </a>
+			  	<a href="#"><i class="glyphicon glyphicon-info-sign"></i> </a>
+				<a href="#"><i class="fa fa-calculator"></i></a>
+			  	<a href="#"><i class="glyphicon glyphicon-registration-mark"></i></a>
+			 	<a href="#"><i class="glyphicon glyphicon-dashboard"></i></a>
+				<a href="#"><i class="glyphicon glyphicon-bell"></i></a>
+			</li>
+		</ul>
+	  </div>
+	  <div class="rightside-menu">
+		<ul>
+			<li>
+		     <a href="#"><i class="ti-search"></i></a>
+			 <a href="#"><i class="ti-help-alt"></i></a>
+			 <a href="#"><i class="ti-user"></i><span>Serita Ma</span></a>
+			</li>
+		</ul>
+	  </div>
+    </nav>
+  </header>
+   <!----------- Middel side, contains header navbar end ---------->
+  <!------------------ Left side column. contains searchbar and orderlist and buttons start--------------------->
+  <aside class="main-sidebar d-flex  justify-content-end">
+    <!-- sidebar-->
+    <section class="sidebar">
+		<div class="search-bx">
+			<input type="search" name="search" id="search" autocomplete="off" class="search-bar" placeholder="input search text">
+			<button class="btnn" type="submit" id="button-addon"><i class="ti-search"></i></button>
+		</div>
+		<div id="scroller">
+		<div class="accordion mt-2 " id="accordionExample">
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				  Order No
+				  <br>Order Type
+				</button>
+			  </h2>
+			  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<p>Custom: <span>Walk in</span></p>
+					<p>Table: <span>B3</span></p>
+					<p>Waiter: <span>Jaff</span></p>
+					<p>Item: <span>04</span></p>
+					<p>Done: <span>03</span></p>
+					<p>Time: <span>01:16:40</span></p>
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				  Order No
+				  <br> Order Type
+				</button>
+			  </h2>
+			  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<p>Custom: <span>Walk in</span></p>
+					<p>Table: <span>B3</span></p>
+					<p>Waiter: <span>Jaff</span></p>
+					<p>Item: <span>04</span></p>
+					<p>Done: <span>03</span></p>
+					<p>Time: <span>01:16:40</span></p>
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="headingThree">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				  Order No
+				  <br> Order Type
+				</button>
+			  </h2>
+			  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<p>Custom: <span>Walk in</span></p>
+					<p>Table: <span>B3</span></p>
+					<p>Waiter: <span>Jaff</span></p>
+					<p>Item: <span>04</span></p>
+					<p>Done: <span>03</span></p>
+					<p>Time: <span>01:16:40</span></p>
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingFour">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					Order No
+					<br> Order Type
+				  </button>
+				</h2>
+				<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+				  <div class="accordion-body">
+					  <p>Custom: <span>Walk in</span></p>
+					  <p>Table: <span>B3</span></p>
+					  <p>Waiter: <span>Jaff</span></p>
+					  <p>Item: <span>04</span></p>
+					  <p>Done: <span>03</span></p>
+					  <p>Time: <span>01:16:40</span></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="headingFive">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					Order No
+					<br> Order Type
+				  </button>
+				</h2>
+				<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+				  <div class="accordion-body">
+					  <p>Custom: <span>Walk in</span></p>
+					  <p>Table: <span>B3</span></p>
+					  <p>Waiter: <span>Jaff</span></p>
+					  <p>Item: <span>04</span></p>
+					  <p>Done: <span>03</span></p>
+					  <p>Time: <span>01:16:40</span></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="headingSix">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+					Order No
+					<br> Order Type
+				  </button>
+				</h2>
+				<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+				  <div class="accordion-body">
+					  <p>Custom: <span>Walk in</span></p>
+					  <p>Table: <span>B3</span></p>
+					  <p>Waiter: <span>Jaff</span></p>
+					  <p>Item: <span>04</span></p>
+					  <p>Done: <span>03</span></p>
+					  <p>Time: <span>01:16:40</span></p>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		</div>
+		<div class="left-side-button">
+			<button type="button" class=" buttonalert order-btn btn btn-sm mb-2"> <i class="icon glyphicon glyphicon-info-sign"></i>Order Details</button>
+			<div class="btnn-k-c">
+			<button type="button" class="buttonalert kot-btn btn btn-sm mb-2"> <i class="icon glyphicon glyphicon-print"></i>KOT</button>
+			<button type="button" class="buttonalert cot-btn btn btn-sm mb-2"> <i class="icon glyphicon glyphicon-print"></i>BOT</button>
+		    </div>
+			<button type="button" class="buttonalert bill-btn btn btn-sm mb-2"> <i class="icon glyphicon glyphicon-info-sign"></i>Bills</button>
+			<button type="button" class="buttonalert create-btn btn btn-sm mb-2"> <i class="icon glyphicon glyphicon-info-sign"></i>Create Invoice</button>
+			<button type="button" class="buttonalert close-btn btn btn-sm mb-2"> <i class="icon glyphicon glyphicon-info-sign"></i>Close Order</button>
+			<button type="button" class="buttonalert status-btn btn btn-sm mb-2"> <i class="icon glyphicon glyphicon-info-sign"></i>Kitchen Status</button>
+		</div>
+    </section>
+  </aside>
+  <!------------------ Left side column. contains searchbar and orderlist and buttons end--------------------->
+<!--=========================================== Middel side and right side column contains Amount & Table & Food Item Section Start ============================================-->
+  <div class="content-wrapperr">
+	  <div class="container-full">
+		<section class="contnt">
+			<!--=========== Amount & Table Section Start ==============-->
+			<div class="row">
+				<div class="col-6">
+					<div class="box">
+						<div class="box-body">
+							<div class="col-12">
+								<div class="row">
+									<div class="col-3"><button  type="button" class=" dine-btn top-btn btn btn-outline btn-sm mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class=" ti-layout-grid4-alt"></i> Dine in</button></div>
+									<!-- Modal -->
+										<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">Tables</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<h4 style="font-size: 15px; text-align: center">Order Number: New</h4>
+														<div class="col-4">
+															<h5>Table 1</h5>
+															<h5>Sit Capacity: 6</h5>
+															<h5>Available: 2</h5>
+															<div class="table-responsive">
+															<table class="table">
+																<thead class=".bg-secondary tbl-header">
+																	<tr>
+																		<th>Order</th>
+																		<th>Time</th>
+																		<th>Person</th>
+																		<th>Del</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>1</td>
+																		<td>12:30</td>
+																		<td>4</td>
+																		<td><a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+																	</tr>
+																</tbody>
+																<tbody>
+																	<tr>
+																		<td>2</td>
+																		<td>12:40</td>
+																		<td>6</td>
+																		<td><a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+																	</tr>
+																</tbody>
+															</table>
+															</div>
+														</div>
+														<div class="col-4">
+															<h5>Table 1</h5>
+															<h5>Sit Capacity: 6</h5>
+															<h5>Available: 2</h5>
+															<div class="table-responsive">
+															<table class="table">
+																<thead class=".bg-secondary tbl-header">
+																	<tr>
+																		<th>Order</th>
+																		<th>Time</th>
+																		<th>Person</th>
+																		<th>Del</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>1</td>
+																		<td>12:30</td>
+																		<td>4</td>
+																		<td><a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+																	</tr>
+																</tbody>
+																<tbody>
+																	<tr>
+																		<td>2</td>
+																		<td>12:40</td>
+																		<td>6</td>
+																		<td><a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+																	</tr>
+																</tbody>
+															</table>
+															</div>
+														</div>
+														<div class="col-4">
+															<h5>Table 1</h5>
+															<h5>Sit Capacity: 6</h5>
+															<h5>Available: 2</h5>
+															<div class="table-responsive">
+															<table class="table">
+																<thead class=".bg-secondary tbl-header">
+																	<tr>
+																		<th>Order</th>
+																		<th>Time</th>
+																		<th>Person</th>
+																		<th>Del</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>1</td>
+																		<td>12:30</td>
+																		<td>4</td>
+																		<td><a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+																	</tr>
+																</tbody>
+																<tbody>
+																	<tr>
+																		<td>2</td>
+																		<td>12:40</td>
+																		<td>6</td>
+																		<td><a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+																	</tr>
+																</tbody>
+															</table>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+												<button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary btn-sm">Submit</button>
+												<button type="button" class="btn btn-primary btn-sm">Proceed without table</button>
+												<button type="button" class="btn btn-primary btn-sm">Cancel</button>
+												</div>
+											</div>
+											</div>
+										</div>
+									<!-- Modal end-->
+									<div class="col-3"><button  type="button" class=" take-btn top-btn btn btn-outline btn-sm mb-2"> <i class="ti-bag"></i> Take away</button></div>
+									<div class="col-3"><button  type="button" class=" delivery-btn top-btn btn btn-outline btn-sm mb-2"> <i class="ti-truck"></i> Delivery</button></div>
+									<div class="col-3"><button  type="button" class=" table-btn top-btn btn btn-outline btn-sm mb-2"> <i class=" ti-layout-grid4-alt"></i> Table</button></div>
+						    	</div>
+							</div>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-5">
+										<div class="dropdown ">
+											<button class="btn btn-outline btn-default dropdown-toggle btn_pos_user" type="button" data-bs-toggle="dropdown">Waiter</button>
+											<div class="dropdown-menu btn_pos_user">
+												<a class="dropdown-item" href="#">Custom:walk in</a>
+												<a class="dropdown-item" href="#">Table:B3</a>
+												<a class="dropdown-item" href="#">Waiter:Jaff</a>
+												<a class="dropdown-item" href="#">Custom:walk in</a>
+												<a class="dropdown-item" href="#">Table:B3</a>
+												<a class="dropdown-item" href="#">Waiter:Jaff</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-5">
+										<div class="dropdown ">
+											<button class="btn  btn-outline btn-default dropdown-toggle btn_pos_user" type="button" data-bs-toggle="dropdown">Customer</button>
+											<div class="dropdown-menu btn_pos_user">
+												<a class="dropdown-item" href="#">Custom:walk in</a>
+												<a class="dropdown-item" href="#">Table:B3</a>
+												<a class="dropdown-item" href="#">Waiter:Jaff</a>
+												<a class="dropdown-item" href="#">Custom:walk in</a>
+												<a class="dropdown-item" href="#">Table:B3</a>
+												<a class="dropdown-item" href="#">Waiter:Jaff</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-1">
+										<a href="#"><i class="icon glyphicon glyphicon-user ml-2"></i></a>
+									</div>
+									<div class="col-1">
+										<a href="#"><i class="icon glyphicon glyphicon-pencil"></i></a>
+									</div>
+						        </div>
+						    </div>
+							<!---- table start ---->
+							<div class="table-responsive scrollbar coustome_table_price">
+								<table class="table">
+									<thead class=".bg-secondary tbl-header">
+										<tr>
+											<th>SN</th>
+											<th>Menu</th>
+											<th>price</th>
+											<th>QTY</th>
+											<th>Dis amt</th>
+											<th>Total</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>food</td>
+											<td>100.00</td>
+											<td>
+												<div="container">
+													<!-- adding button and heading to show the digits -->
+
+													<!-- increment & decrement start -->
+													<div class="row">
+														<div>
+															<div class="dec button btn btn-danger btn-sm" style="border-radius: 15px;" ><strong style="font-size: 20px; font-weight: bold;">-</strong></div>
+
+															<input type="text" name="qty" id="1" value="0" style="height: 30px; width: 50px; margin-left: 10px; margin-right: 10px; font-size: 17px; font-weight: bold;
+															border-radius: 12px;  "></input>
+
+															<div class="inc button btn btn-success btn-sm" style="border-radius: 15px;" > <strong style="font-size: 20px; font-weight: bold;">+</strong> </div>
+
+														</div>
+													</div>
+													<!-- increment & decrement start -->
+												</div>
+											</td>
+											<td>10</td>
+											<td class="pl-2">90 <a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td>2</td>
+											<td>food</td>
+											<td>100.00</td>
+											<td>
+												<div="container">
+													<!-- adding button and heading to show the digits -->
+
+												<!-- increment & decrement start -->
+													<div class="row">
+														<div>
+															<div class="dec button btn btn-danger btn-sm" style="border-radius: 15px;"  ><strong style="font-size: 20px; font-weight: bold;">-</strong></div>
+
+															<input type="text" name="qty" id="1" value="0" style="height: 30px; width: 50px; margin-left: 10px; margin-right: 10px; font-size: 17px; font-weight: bold;
+															border-radius: 12px;  "></input>
+
+															<div class="inc button btn btn-success btn-sm" style="border-radius: 15px;"> <strong style="font-size: 20px; font-weight: bold;">+</strong> </div>
+
+														</div>
+													</div>
+													<!-- increment & decrement start -->
+
+												</div>
+											</td>
+											<td>10</td>
+											<td class="pl-2">90 <a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td>3</td>
+											<td>food</td>
+											<td>100.00</td>
+											<td>
+												<div="container">
+													<!-- adding button and heading to show the digits -->
+
+													<!-- increment & decrement start -->
+													<div class="row">
+														<div>
+															<div class="dec button btn btn-danger btn-sm"style="border-radius: 15px;"  ><strong style="font-size: 20px; font-weight: bold;">-</strong></div>
+
+															<input type="text" name="qty" id="1" value="0" style="height: 30px; width: 50px; margin-left: 10px; margin-right: 10px; font-size: 17px; font-weight: bold;
+															border-radius: 12px;  "></input>
+
+															<div class="inc button btn btn-success btn-sm" style="border-radius: 15px;" > <strong style="font-size: 20px; font-weight: bold;">+</strong> </div>
+
+														</div>
+													</div>
+													<!-- increment & decrement start -->
+											</td>
+											<td>10</td>
+											<td class="pl-2">90 <a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td>4</td>
+											<td>food</td>
+											<td>100.00</td>
+											<td>
+												<div="container">
+													<!-- adding button and heading to show the digits -->
+
+													<!-- increment & decrement start -->
+													<div class="row">
+														<div>
+															<div class="dec button btn btn-danger btn-sm"style="border-radius: 15px;"  ><strong style="font-size: 20px; font-weight: bold;">-</strong></div>
+
+															<input type="text" name="qty" id="1" value="0" style="height: 30px; width: 50px; margin-left: 10px; margin-right: 10px; font-size: 17px; font-weight: bold;
+															border-radius: 12px;  "></input>
+
+															<div class="inc button btn btn-success btn-sm" style="border-radius: 15px;" > <strong style="font-size: 20px; font-weight: bold;">+</strong> </div>
+
+														</div>
+													</div>
+													<!-- increment & decrement start -->
+											</td>
+											<td>10</td>
+											<td class="pl-2">90 <a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td>5</td>
+											<td>food</td>
+											<td>100.00</td>
+											<td>
+												<div="container">
+													<!-- adding button and heading to show the digits -->
+
+													<!-- increment & decrement start -->
+													<div class="row">
+														<div>
+															<div class="dec button btn btn-danger btn-sm"style="border-radius: 15px;"  ><strong style="font-size: 20px; font-weight: bold;">-</strong></div>
+
+															<input type="text" name="qty" id="1" value="0" style="height: 30px; width: 50px; margin-left: 10px; margin-right: 10px; font-size: 17px; font-weight: bold;
+															border-radius: 12px;  "></input>
+
+															<div class="inc button btn btn-success btn-sm" style="border-radius: 15px;" > <strong style="font-size: 20px; font-weight: bold;">+</strong> </div>
+
+														</div>
+													</div>
+													<!-- increment & decrement start -->
+											</td>
+											<td>10</td>
+											<td class="pl-2">90 <a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td>6</td>
+											<td>food</td>
+											<td>100.00</td>
+											<td>
+												<div="container">
+													<!-- adding button and heading to show the digits -->
+
+													<!-- increment & decrement start -->
+													<div class="row">
+														<div>
+															<div class="dec button btn btn-danger btn-sm"style="border-radius: 15px;"  ><strong style="font-size: 20px; font-weight: bold;">-</strong></div>
+
+															<input type="text" name="qty" id="1" value="0" style="height: 30px; width: 50px; margin-left: 10px; margin-right: 10px; font-size: 17px; font-weight: bold;
+															border-radius: 12px;  "></input>
+
+															<div class="inc button btn btn-success btn-sm" style="border-radius: 15px;" > <strong style="font-size: 20px; font-weight: bold;">+</strong> </div>
+
+														</div>
+													</div>
+													<!-- increment & decrement start -->
+											</td>
+											<td>10</td>
+											<td class="pl-2">90 <a href="#"><i class="glyphicon glyphicon-trash "></i></a></td>
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+							<!-- table end -->
+							<!-- input item start -->
+							<div class="footer-content">
+								<div class="item-details">
+									<div class="row">
+										<div class="col-4">
+											<p>Total Item: <span>13</span></p>
+											<p>Discount: <span>0.00</span></p>
+										</div>
+										<div class="col-4">
+											<p>Sub Total: <span>17.00</span></p>
+											<p>Vat: <span>0.00</span></p>
+										</div>
+										<div class="col-4">
+											<p>Discount: <span><i class="glyphicon glyphicon-pencil"></i> 0.00</span></p>
+											<p>Charge: <span><i class="glyphicon glyphicon-pencil"></i> 0.00</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- input item end -->
+							<!-- footer button start -->
+							<div class="col-12">
+								<div class="row">
+									<div class="col-3"><button  type="button" class=" cancel-btn top-btn btn btn-sm mb-2"> Cancel</button></div>
+									<div class="col-3"><button  type="button" class=" draft-btn top-btn btn btn-sm mb-2"> Draft</button></div>
+									<div class="col-3"><button  type="button" class=" invoice-btn top-btn btn btn-sm mb-2"> Invoice</button></div>
+									<div class="col-3"><button  type="button" class=" place-btn top-btn btn btn-sm mb-2"> Place Order</button></div>
+								</div>
+							</div>
+							<!-- footer button end -->
+						</div>
+					</div>
+				</div>
+<!--=========== Amount & Table Section End ==============-->
+<!--============ Search & Food Item Section Start =================-->
+				<div class="col-6">
+					<div class="box">
+						<div class="box-body">
+							<div class="col-12">
+							<div class="row">
+							<div class="col-8">
+							<div class="search-bx">
+								<div class="input-group">
+									<input type="search" class="form-control rounded" placeholder="Search Name" aria-label="Search" aria-describedby="search-addon" />
+									<button type="button" class="btn srch-btn btn-primary">Search</button>
+								</div>
+							</div>
+						   </div>
+						   <div class="col-2">
+								<button  type="button" class=" reset-btn btn btn-outline-primary btn-sm">Reset</button>
+						   </div>
+						   <div class="col-2 mt-2">
+							   <a href="#">Filter</a>
+						   </div>
+						   </div>
+						   </div>
+						   <div class="col-12">
+							<!------ food items section start -------->
+							<section class="content gallery-content-button">
+							<div id="gallery">
+							<div class="row">
+							<div class="col-2">
+								<div class="box gallery-btn bg-transparent no-shadow b-0">
+									<div class="box-body button p-0">
+
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-all">All</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-american">American</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-bangali">Bangali</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-italian">Italian</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary " id="filter-chinese">Chinese</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-desert">Deserts</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-desert">Indian</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-desert">Thai</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-desert">Iranian</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-desert">Turkish</button>
+										</div>
+										<div class="col-12">
+											<button class="item-btn btn btn-primary" id="filter-desert">Maxican</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- food items filter start-->
+								<div class="col-10">
+									<div class="isotope-gallary">
+										<div class="gallery-div">
+											<div class="item_img american_content">
+												<a href="../images/gallery/img1.jpg"   title="Image title will be apear here">
+													<img src="../images/gallery/img1.jpg" alt="gallery" class="gallery-img all american" >
+
+												</a>
+												<div class="item-name ">
+													<p>Food Name</p>
+													<p>Price: 100</p>
+												</div>
+											</div>
+											<div class="item_img american_content">
+												<a href="../images/gallery/img2.jpg"  title="Image title will be apear here">
+													<img src="../images/gallery/img2.jpg" class="gallery-img all american italian" alt="gallery" >
+												</a>
+												<div class="item-name ">
+													<p>Food Name</p>
+													<p>Price: 100</p>
+												</div>
+											</div>
+											<div class="item_img bangali_content">
+												<a href="../images/gallery/img3.jpg" title="Image title will be apear here">
+													<img src="../images/gallery/img3.jpg" class="gallery-img all " alt="gallery" >
+
+												</a>
+												<div class="item-name ">
+													<p>Food Name</p>
+													<p>Price: 100</p>
+												</div>
+											</div>
+											<div class="item_img american_content chinese_content">
+												<a href="../images/gallery/img4.jpg" title="Image title will be apear here">
+													<img src="../images/gallery/img4.jpg" class="gallery-img all american" alt="gallery" >
+												</a>
+												<div class="item-name">
+													<p>Food Name</p>
+													<p>Price: 100</p>
+												</div>
+											</div>
+											<div class="item_img bangali_content">
+												<a href="../images/gallery/img3.jpg"  title="Image title will be apear here">
+													<img src="../images/gallery/img3.jpg" class="gallery-img all" alt="gallery" >
+												</a>
+												<div class="item-name ">
+													<p>Bengali food Name</p>
+													<p>Price: 100</p>
+												</div>
+											</div>
+											<div class="item_img bangali_content chinese_content">
+												<a href="../images/gallery/img2.jpg"  title="Image title will be apear here">
+													<img src="../images/gallery/img2.jpg" class="gallery-img all bangali italian" alt="gallery" >
+												</a>
+												<div class="item-name ">
+													<p>Bengali food Name</p>
+													<p>Price: 100</p>
+												</div>
+											</div>
+											<div class="item_img bangali_content italian_content">
+												<a href="../images/gallery/img1.jpg"  title="Image title will be apear here">
+													<img src="../images/gallery/img1.jpg" class="gallery-img all bangali" alt="gallery" >
+												</a>
+												<div class="item-name ">
+													<p>Bengali food Name</p>
+													<p>Price: 100</p>
+												</div>
+											</div>
+											<div class="item_img italian_content chinese_content">
+												<a href="../images/gallery/img2.jpg"  title="Image title will be apear here">
+													<img src="../images/gallery/img2.jpg" class="gallery-img all bangali" alt="gallery" >
+												</a>
+												<div class="item-name ">
+													<p>Bengali food Name</p>
+													<p>Price: 100</p>
+												</div>
+											</div>
+										</div>
+								    </div>
+								</div>
+								<!-- food items filter end -->
+						</div>
+						   </div>
+						</section>
+						<!---- food items section end ------>
+						</div>
+						</div>
+					</div>
+				</div>
+<!--============= Search & Food Item Section End ===============-->
+			</div>
+		</section>
+	  </div>
+  </div>
+
+<!--=========================================== Middel side and right side column contains Amount & Table & Food Item Section End ============================================-->
+	<!-- Vendor JS -->
+	<script src="js/vendors.min.js"></script>
+	<script src="js/pages/chat-popup.js"></script>
+	<script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.min.js"></script>
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>
+
+	<!-- Riday Admin App -->
+	<script src="js/template.js"></script>
+
+
+
+
+
+
+	<!-- Vendor JS -->
+	<!-- <script src="js/vendors.min.js"></script>
+	<script src="js/pages/chat-popup.js"></script>
+	<script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.min.js"></script>
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>	 -->
+	<script src="../assets/vendor_components/gallery/js/animated-masonry-gallery.js"></script>
+    <script src="../assets/vendor_components/gallery/js/jquery.isotope.min.js"></script>
+	<script src="../assets/vendor_components/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/vendor_components/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.calculator@2.0.1/jquery.plugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.calculator@2.0.1/jquery.calculator.min.js"></script>
+
+	<!-- Riday Admin App -->
+	<script src="js/template.js"></script>
+
+    <script src="js/pages/gallery.js"></script>
+
+
+	 <script>
+		// Increment decrement JavaScript code
+		incrementVar = 0;
+		$('.inc.button').click(function(){
+			var $this = $(this),
+				$input = $this.prev('input'),
+				$parent = $input.closest('div'),
+				newValue = parseInt($input.val())+1;
+			$parent.find('.inc').addClass('a'+newValue);
+			$input.val(newValue);
+			incrementVar += newValue;
+		});
+		$('.dec.button').click(function(){
+			var $this = $(this),
+				$input = $this.next('input'),
+				$parent = $input.closest('div'),
+				newValue = parseInt($input.val())-1;
+			console.log($parent);
+			$parent.find('.inc').addClass('a'+newValue);
+			$input.val(newValue);
+			incrementVar += newValue;
+		});
+		// Alert for order and another buttons
+		$('.buttonalert').click(function(){
+			swal("Alert !","Please select an open order to proceed !");
+		});
+
+
+
+
+
+
+
+
+	</script>
+
+
+</body>
+
+<!-- Mirrored from riday-admin-template.multipurposethemes.com/bs5/main/sample_blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 08:04:38 GMT -->
+</html>

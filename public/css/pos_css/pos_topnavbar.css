@@ -1,0 +1,109 @@
+/***********************
+Pos Page navbar Css Start
+***********************/
+.main-header{
+    max-height: 135px;
+    z-index: 999;
+    position: relative;
+    margin-right: 361px;
+    transition:  0.3s ease-in-out;
+}
+.fixed .main-header{
+    right: -360px;
+    max-height: 50px;
+    left: 272px;
+}
+/**Navbar css start**/
+.main-header ul{
+    list-style-type: none;
+}
+.main-header li i{
+    margin-left: 30px;
+    font-size: 20px;
+    color: #8c8c8c;
+}
+.main-header .navbar{
+    background: #ffffff;
+    min-height: 50px;
+}
+.main-header .app-menu{
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex !important;
+  align-items: center;
+}
+.main-header .app-menu ul{
+  list-style: none;
+  display: flex !important;
+}
+.main-header .navbar{
+    margin-left: 0px;
+}
+.main-header .navbar .rightside-menu{ 
+    margin-right: 50px;
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex !important;
+}
+.main-header .righside-menu li i{
+    font-size: 20px;
+}
+/* searchbox start*/
+.main-header .rightside-menu .searchbox{
+    position: relative;
+    min-width: 30px;
+    width: 0%;
+    height: 30px;
+    float: right;
+}
+.main-header .rightside-menu .searchbox-input{
+    top: 0;
+    right: 0;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    font-size: 16px;
+}
+.main-header .rightside-menu .searchbox-input:focus{
+    background-color: whitesmoke;
+}
+.main-header .rightside-menu .searchbox-icon{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    font-size: 22px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.main-header .rightside-menu .searchbox-open{
+    width: 100%;
+}
+/* searchbox end*/
+.main-header .rightside-menu .dropdown-menu{
+    right: 45px;
+}
+.main-header .rightside-menu .sub-menu{
+    position: absolute; 
+    inset: 0px auto auto 0px; 
+    margin-top: 6px; 
+    margin-left: 12px; 
+    background-color: whitesmoke; 
+    transform: translate3d(-100px, 21px, 0px);
+}
+/***********************
+Pos Page navbar Css End
+***********************/
